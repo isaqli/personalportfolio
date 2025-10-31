@@ -94,12 +94,6 @@ section h2::after {
     background-repeat: repeat-x;
 }
 
-/* secton h2:hover::after {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-15px);}}%3C/style%3E%3Cpath fill='none' stroke='%230087ca' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E"); 
-    background-repeat: repeat-x;
-    transition: background-image 0.3s ease;
-} */
-
 #about-section {
     min-height: 100vh;
     display: flex;
@@ -155,7 +149,7 @@ section h2::after {
     background-color: var(--light-green);
     padding: 25px;
     border-radius: 8px;
-    border: 2px solid rgb(177, 177, 177);
+    /* border: 2px solid rgb(177, 177, 177); */
     margin-top: 15px;
 }
 
@@ -207,11 +201,61 @@ section h2::after {
     background-color: #f6f6f6;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    background: rgb(255, 230, 230);
+    border-radius: 10px;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    padding: 10px;
+}
+
+.project-card p {
+    padding: 10px;
+}
+
+.project-card a {
+    background-color: var(--light-green);
+    padding: 15px 15px;
+    margin: 20px;
+    color: white;
+    font-family: "Patrick Hand", sans-serif;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid rgb(168, 168, 168);
+}
+
+.project-card a:hover {
+    background-color: rgb(144, 168, 144);
+}
+
+.project-image {
+    background-color: pink;
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 footer {
     background-color: rgb(137, 137, 137);
     color: white;
     text-align: center;
     padding: 2rem 0;
-    
 }
 
