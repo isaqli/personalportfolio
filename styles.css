@@ -71,6 +71,7 @@ section {
     gap: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
     background-color: var(--light-pink);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 section h2 {
@@ -151,6 +152,7 @@ section h2::after {
     border-radius: 8px;
     /* border: 2px solid rgb(177, 177, 177); */
     margin-top: 15px;
+    box-shadow: rgba(37, 57, 37, 0.35) 0px 5px 15px;
 }
 
 .collage img {
@@ -218,6 +220,7 @@ section h2::after {
 
 .project-card:hover {
     transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project-card h3 {
